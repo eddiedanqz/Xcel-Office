@@ -1,0 +1,21 @@
+.tabs-white {
+    color: black;
+}
+.classic-tabs .nav li a.active {
+    color: #007bff;
+}
+.classic-tabs .nav li a {
+    text-transform: none !important;
+    color: #666666;
+    font-weight: normal;
+}
+.pills-white .nav-link.active {
+    background-color: unset !important;
+    color: black;
+    border-right: 1px solid #007bff;
+    box-shadow: none;
+}
+.pills-white .nav-link.active:hover {
+    background-color: unset !important;
+    box-shadow: none;
+}

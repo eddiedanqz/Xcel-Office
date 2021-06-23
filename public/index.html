@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <title><%= htmlWebpackPlugin.options.title %></title>
+    <link href="./fontawesome-free-5.14.0-web/css/all.css" rel="stylesheet">
+    <link href="./css/bootstrap.css"  rel="stylesheet"/>
+    <link href="./css/mdb.min.css"  rel="stylesheet"/>
+    <link href="./css/addons/datatables-select.min.css"  rel="stylesheet"/>
+    <link href="./css/style.css"  rel="stylesheet"/>
+  </head>
+  <body>
+   
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+
+  
+  <script type="text/javascript" src="./js/jquery.min.js"></script>
+  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="./js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="./js/bootstrap.js"></script>
+  <script type="text/javascript" src="./js/mdb.min.js" ></script>
+  <script type="text/javascript" src="./js/modules/material-select.js" ></script>
+  <script type="text/javascript" src="./js/modules/picker-date.js" ></script>
+  <script type="text/javascript" src="./js/addons-pro/simple-charts.min.js" ></script>
+  <script type="text/javascript" src="./js/modules/chart.js" defer></script>
+
+
+
+   <!-- Initializations -->
+  <script>
+   // Material Select Initialization
+   $(document).ready(function() { 
+    $('.mdb-select').materialSelect();
+    // Tooltips Initialization
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip()
+    })
+    $(function () {
+  $('.material-tooltip-main').tooltip({
+    template: '<div class="tooltip md-tooltip"><div class="tooltip-arrow md-arrow"></div><div class="tooltip-inner md-inner"></div></div>'
+      });
+    })
+    // Data Picker Initialization
+    $('.datepicker').pickadate({
+        min:-15,
+        darktheme: true,
+        format: 'yyyy-mm-dd'
+    });
+
+})
+  </script>
+
+  </body>
+</html>
